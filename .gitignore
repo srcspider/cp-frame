@@ -1,0 +1,5 @@
+build/
+.module-cache
+.lock.pid
+*.sublime-project
+*.sublime-workspace

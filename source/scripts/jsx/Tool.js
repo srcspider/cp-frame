@@ -1,17 +1,17 @@
 /** @jsx React.DOM */
-var Toolbox = React.createClass({
+var Tool = React.createClass({
 	getInitialState: function() {
 		return {
 			minimized: false,
 		};
 	},
 	render: function () {
-		var body = <div>[box]</div>;
+		var body = <div>[tool]</div>;
 		return (
-			<div className="box">
-				<div className="box-header">
+			<div className="tool">
+				<div className="tool-header">
 					<div>{this.state.name}</div>
-					<div class="box-controls">
+					<div class="tool-controls">
 						<span onClick={this.toggleMinimize}>
 							{ this.state.minimized ? 'maximize' : 'minimize' }
 						</span>

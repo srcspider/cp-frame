@@ -7,13 +7,15 @@ var Plane = React.createClass({
 		this._notices = [];
 		this._toolboxes = [];
 		var layout = this.props.layout;
-		layout.on('new_notice', this.addNotice);
-		layout.on('new_toolbox', this.addToolbox);
+		layout.on('new:notice', this.addNotice);
+		layout.on('new:toolbox', this.addToolbox);
 	},
 	addNotice: function (notice) {
+		// @todo implement
 		return this;
 	},
 	addToolbox: function (toolbox) {
+		// @todo implement
 		return this;
 	}
 });

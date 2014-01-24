@@ -2,31 +2,42 @@
 <title>reactjs layout manager</title>
 <script src="lib/react/react.js"></script>
 <link rel="stylesheet" href="lib/twbs/bootstrap.css"/>
-<link rel="stylesheet" href="css/module.css"/>
+<link rel="stylesheet" href="lib/fontawesome/css/font-awesome.css"/>
+<link rel="stylesheet" href="build/css/module.css"/>
 
-<div id="app-main">
+<div id="-app-main">
 	<!-- js context -->
 	<noscript>
 		<p>This area requires javascript to function.</p>
 	</noscript>
 </div>
 
+<div class="cp-page">
+	<div class="cp-nav">
+		nav
+	</div>
+	<div class="cp-layout">
+		layout
+	</div>
+</div>
+
 <!-- domain -->
 <script>
-	window.srcspider = { reactjs_layout_manager: {} };
-	window.app = window.srcspider.reactjs_layout_manager;
+	window.app = {};
 </script>
 <!-- 3rd party dependencies -->
+<script src="lib/jquery/jquery-2.0.3.js"></script>
 <script src="lib/underscore.js"></script>
 <script src="lib/backbone/backbone.js"></script>
 <script src="lib/Class.js"></script>
 <!-- react components -->
+<script src="build/jsx/Page.js"></script>
 <script src="build/jsx/Plane.js"></script>
 <script src="build/jsx/Notice.js"></script>
-<script src="build/jsx/Toolbox.js"></script>
+<script src="build/jsx/Tool.js"></script>
 <!-- application logic -->
 <script src="build/app/Instance.js"></script>
 <script src="build/app/Layout.js"></script>
 <script src="build/app/Notice.js"></script>
-<script src="build/app/Toolbox.js"></script>
+<script src="build/app/Tool.js"></script>
 <script src="build/main.js"></script>

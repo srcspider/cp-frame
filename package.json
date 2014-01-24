@@ -1,0 +1,16 @@
+{
+	"name": "control-frame",
+	"version": "0.1.0",
+	"homepage": "http://github.com/srcspider/cp-frame",
+	"author": {
+		"name": "srcspider",
+		"url": "http://srcspider.com"
+	},
+	"devDependencies": {
+		"grunt": "~0.4.2",
+		"grunt-contrib-jshint": "~0.6.3",
+		"grunt-contrib-nodeunit": "~0.2.0",
+		"grunt-contrib-uglify": "~0.2.2",
+		"grunt-jsx": "~0.1.5"
+	}
+}

@@ -1,5 +1,8 @@
 /** @jsx React.DOM */
 app.Instance = Class.extend({
+
+//// Event Handling ////////////////////////////////////////////////////////////
+
 	on: function (triggerName, callback) {
 		var namespace = null;
 
@@ -13,8 +16,8 @@ app.Instance = Class.extend({
 
 		if (this._events[triggerName] == null) {
 			this._events[triggerName] = {
-				unnamed: [], 
-				named: {} 
+				unnamed: [],
+				named: {}
 			};
 		}
 
@@ -27,6 +30,7 @@ app.Instance = Class.extend({
 
 		return this;
 	},
+
 	off: function (triggerName) {
 		var namespace = null;
 
@@ -40,8 +44,8 @@ app.Instance = Class.extend({
 
 		if (namespace == null) {
 			this._events[triggerName] = {
-				unnamed: [], 
-				named: {} 
+				unnamed: [],
+				named: {}
 			};
 		}
 		else { // namespace != null
@@ -50,6 +54,7 @@ app.Instance = Class.extend({
 
 		return this;
 	},
+
 	trigger: function (triggerName) {
 		var self = this;
 		var args = [].slice.call(arguments, 1);
@@ -69,4 +74,5 @@ app.Instance = Class.extend({
 
 		return this;
 	}
+
 });

@@ -1,0 +1,16 @@
+$sidepanel-width: 150px;
+
+.cp-page {
+	display: relative;
+	background: green; // debug
+
+	.cp-nav {
+		width: $sidepanel-width;
+		float: left;
+		background: red; // debug
+	}
+	.cp-layout {
+		margin-left: $sidepanel-width;
+		background: blue; // debug
+	}
+}
